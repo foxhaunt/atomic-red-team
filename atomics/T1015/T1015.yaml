@@ -18,7 +18,7 @@ atomic_tests:
   executor:
     name: command_prompt
     command: |
-      reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\#{target_executable}" /v "Debugger" /t REG_SZ /d "C:\windows\system32\cmd.exe" /f
+      reg add HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\#{target_executable} /v Debugger /t REG_SZ /d C:\windows\system32\cmd.exe /f
 
 - name: Attaches Command Prompt As Debugger To Process - sethc
   description: |
@@ -35,7 +35,7 @@ atomic_tests:
   executor:
     name: command_prompt
     command: |
-      reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\#{target_executable}" /v "Debugger" /t REG_SZ /d "C:\windows\system32\cmd.exe" /f
+      reg add HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\#{target_executable} /v Debugger /t REG_SZ /d C:\windows\system32\cmd.exe /f
 
 - name: Attaches Command Prompt As Debugger To Process - utilman
   description: |
@@ -52,7 +52,7 @@ atomic_tests:
   executor:
     name: command_prompt
     command: |
-      reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\#{target_executable}" /v "Debugger" /t REG_SZ /d "C:\windows\system32\cmd.exe" /f
+      reg add HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\#{target_executable} /v Debugger /t REG_SZ /d C:\windows\system32\cmd.exe /f
 
 - name: Attaches Command Prompt As Debugger To Process - magnify
   description: |
@@ -69,7 +69,7 @@ atomic_tests:
   executor:
     name: command_prompt
     command: |
-      reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\#{target_executable}" /v "Debugger" /t REG_SZ /d "C:\windows\system32\cmd.exe" /f
+      reg add HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\#{target_executable} /v Debugger /t REG_SZ /d C:\windows\system32\cmd.exe /f
 
 - name: Attaches Command Prompt As Debugger To Process - narrator
   description: |
@@ -86,7 +86,7 @@ atomic_tests:
   executor:
     name: command_prompt
     command: |
-      reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\#{target_executable}" /v "Debugger" /t REG_SZ /d "C:\windows\system32\cmd.exe" /f
+      reg add HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\#{target_executable} /v Debugger /t REG_SZ /d C:\windows\system32\cmd.exe /f
 
 - name: Attaches Command Prompt As Debugger To Process - DisplaySwitch
   description: |
@@ -103,7 +103,7 @@ atomic_tests:
   executor:
     name: command_prompt
     command: |
-      reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\#{target_executable}" /v "Debugger" /t REG_SZ /d "C:\windows\system32\cmd.exe" /f
+      reg add HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\#{target_executable} /v Debugger /t REG_SZ /d C:\windows\system32\cmd.exe /f
 
 - name: Attaches Command Prompt As Debugger To Process - AtBroker
   description: |
@@ -120,4 +120,5 @@ atomic_tests:
   executor:
     name: command_prompt
     command: |
-      reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\#{target_executable}" /v "Debugger" /t REG_SZ /d "C:\windows\system32\cmd.exe" /f
+      reg add HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\#{target_executable} /v Debugger /t REG_SZ /d C:\windows\system32\cmd.exe
+ /f

@@ -48,6 +48,6 @@ atomic_tests:
     name: powershell
     command: |
       get-localgroup
-      get-ADPrinicipalGroupMembership #{user} | select name
+      get-ADPrincipalGroupMembership #{user} | select name
 
 
